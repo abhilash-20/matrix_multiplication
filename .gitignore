@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# macOS system files
+.DS_Store
+
+# Python-specific
+*.log
+*.env
+*.ini
+*.sqlite3
+
+# VSCode / PyCharm / JetBrains IDEs
+.vscode/
+.idea/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+
+venv/
