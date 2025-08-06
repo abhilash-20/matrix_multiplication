@@ -33,14 +33,14 @@ A1 = A[:5, :]
 A2 = A[5:, :]
 
 # Send A1 to worker 1
-response1 = requests.post("https://matrix-multiplication-wicc.onrender.com/multiply", json={
+response1 = requests.post("https://worker-1-evjv.onrender.com/multiply", json={
     "A_part": A1.tolist(),
     "B": B.tolist()
 })
 C1 = response1.json()["C_part"]
 
 # Send A2 to worker 2
-response2 = requests.post("https://matrix-multiplication-wicc.onrender.com/multiply", json={
+response2 = requests.post("https://worker-2-jvt5.onrender.com/multiply", json={
     "A_part": A2.tolist(),
     "B": B.tolist()
 })
